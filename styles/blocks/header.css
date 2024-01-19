@@ -60,7 +60,7 @@
 }
 
 .header__theme-menu-button:focus {
-  box-sizing:border-box;
+  box-sizing: border-box;
   border-block-end: 1px solid var(--theme-menu-colors);
   outline: none;
 }

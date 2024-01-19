@@ -13,7 +13,6 @@
   background-attachment: fixed;
 }
 
-
 .subtitle-text-decor {
   color: var(--subtitle-color);
   font-family: var(--page-font-family);
@@ -47,7 +46,7 @@
   cursor: pointer;
 }
 .link:hover {
-  margin-block-end: -1px;
+  box-sizing: border-box;
   border-block-end: 1px solid var(--paragraph-color);
 }
 .link:focus {
@@ -65,9 +64,9 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
+  z-index: -1;
   inline-size: 25px;
   block-size: 25px;
-  z-index: -1;
 }
 .decorated-zone::before {
   border-inline-end: 1px solid var(--lines-decorations);

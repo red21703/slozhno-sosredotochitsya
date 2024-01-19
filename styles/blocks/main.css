@@ -47,10 +47,10 @@
   .main__section:not(:last-of-type) {
     margin-block-end: 80px;
   }
-  .main__section:nth-of-type(2) {
+  .causes {
     grid-template-columns: 1fr;
   }
-  .main__section:nth-of-type(2) .subtitle-text-decor {
+  .causes .subtitle-text-decor {
     max-inline-size: 236px;
   }
   .main__section-pictures {
@@ -80,10 +80,13 @@
   .main__section {
     grid-template-columns: 314.96px 1fr;
   }
-  .main__section:nth-of-type(2) .subtitle-text-decor {
+  .causes {
+    grid-template-columns: 1fr;
+  }
+  .causes .subtitle-text-decor {
     max-inline-size: 314.96px;
   }
-  .main__section:nth-of-type(2) .main__section-list {
+  .causes .main__section-list {
     grid-template-columns: repeat(3, 1fr);
   }
   .main__section-pictures {
