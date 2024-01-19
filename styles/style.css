@@ -13,23 +13,6 @@
   background-attachment: fixed;
 }
 
-.decorated-zone::after {
-  border-inline-start: 1px solid var(--lines-decorations);
-  border-block-end: 1px solid var(--lines-decorations);
-  inset-inline-start: 10px;
-  inset-block-end: 10px;
-}
-
-.title-decor {
-  color: var(--text-color-alt);
-  font-family: var(--page-font-family);
-  font-weight: 700;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: 0em;
-  text-align: left;
-  background-color: var(--title-bg-color);
-}
 
 .h2-text-decor {
   color: var(--h2-color);
@@ -68,6 +51,9 @@
   border-block-end: 1px solid var(--paragraph-color);
 }
 .link:focus {
+  outline: none;
+}
+.link:focus-visible {
   outline: 1px solid var(--paragraph-color);
 }
 
@@ -81,12 +67,31 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
+  z-index: -1;
 }
 .decorated-zone::before {
   border-inline-end: 1px solid var(--lines-decorations);
   border-block-start: 1px solid var(--lines-decorations);
   inset-inline-end: 10px;
   inset-block-start: 10px;
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--lines-decorations);
+  border-block-end: 1px solid var(--lines-decorations);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.title-decor {
+  color: var(--text-color-alt);
+  font-family: var(--page-font-family);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: var(--title-bg-color);
 }
 
 @media (width >= 768px) {
