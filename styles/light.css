@@ -19,7 +19,7 @@
   --title-bg-color: #ff8dcb;
   --rec-decor-visibility: hidden;
 
-  --h2-color: #353430;
+  --subtitle-color: #353430;
   --paragraph-color: #353430;
   --link-color: #ff8dcb;
 }
@@ -50,7 +50,7 @@
     --title-bg-color: #ff8dcb;
     --rec-decor-visibility: hidden;
 
-    --h2-color: #353430;
+    --subtitle-color: #353430;
     --paragraph-color: #353430;
     --link-color: #ff8dcb;
   }
