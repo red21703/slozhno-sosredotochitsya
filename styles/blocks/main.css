@@ -18,6 +18,7 @@
 
 .main__section-item {
   display: grid;
+  grid-template-rows: min-content 1fr;
   gap: 10px;
 }
 
@@ -76,6 +77,12 @@
 }
 
 @media (width >= 1024px) {
+  .main__section {
+    grid-template-columns: 314.96px 1fr;
+  }
+  .main__section:nth-of-type(2) .h2-text-decor {
+    max-inline-size: 314.96px;
+  }
   .main__section:nth-of-type(2) .main__section-list {
     grid-template-columns: repeat(3, 1fr);
   }
