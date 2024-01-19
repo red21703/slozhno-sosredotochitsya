@@ -86,4 +86,7 @@
   .main__section:nth-of-type(2) .main__section-list {
     grid-template-columns: repeat(3, 1fr);
   }
+  .main__section-pictures {
+    grid-template-columns: 1fr;
+  }
 }
