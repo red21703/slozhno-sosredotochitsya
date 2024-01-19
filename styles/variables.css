@@ -2,3 +2,30 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+/* Файл variables.css */
+
+:root {
+  --page-background-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --lines-decorations: #ff0070;
+  --theme-menu-colors: #ff0070;
+  --text-color: #F1B2CE;
+  --hover-frame: rgba(255, 0, 112, 0.4);
+  --main-title-color: #DB00FF;
+  --shaddow-main-title-color: #ff0070;
+  --text-color-alt: #000028;
+  --bg-color: #000028;
+  --header-logo-text-color: #DB00FF;
+  --title-bg-color: #ff0070;
+  --rec-decor-visibility: visible;
+
+  --h2-color: #ff0070;
+  --paragraph-color: #F1B2CE;
+  --link-color: #ff0070;
+
+  --page-font-family: "IBM Plex mono", monospace;
+  --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --gap: 10px;
+}
+

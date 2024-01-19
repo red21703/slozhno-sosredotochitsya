@@ -2,4 +2,106 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: -bg-color;
+  background-image: var(--page-background-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-family: var(--page-font-family);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--lines-decorations);
+  border-block-end: 1px solid var(--lines-decorations);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+
+}
+
+.title-decor {
+  font-family: var(--page-font-family);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-color-alt);
+  background-color: var(--title-bg-color);
+
+}
+
+.h2-text-decor {
+  font-family: var(--page-font-family);
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: var(--h2-color);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}
+.h4-text-decor{
+font-family: var(--page-font-family);
+font-weight: 400;
+font-size: inherit;
+line-height: inherit;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.paragraph-decor {
+font-family: var(--page-font-family);
+font-size: 18px;
+font-weight: 400;
+line-height: 23.4px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--paragraph-color);
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 2px 2px 0 var(--link-color);
+}
+.link:hover{
+  margin-block-end: -1px;
+  border-block-end: 1px solid var(--paragraph-color);
+}
+.link:focus{
+  outline: 1px solid var(--paragraph-color);  
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after, .decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--lines-decorations);
+  border-block-start: 1px solid var(--lines-decorations);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+
+}
+
+@media (width >= 768px) {
+
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
 }

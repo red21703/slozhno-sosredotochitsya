@@ -1,0 +1,24 @@
+.footer {
+  display: grid;
+  min-block-size: 100vh;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer__main-title {
+color: var(--main-title-color);
+font-size: var(--accent-heading-fs-mobile);
+font-weight: 700;
+line-height: 95.7px;
+letter-spacing: 0em;
+text-align: left;
+text-shadow: 2px 2px 0 var(--shaddow-main-title-color);
+
+}
+
+@media (width >= 768px) {
+  .footer {
+    padding: 20px;
+  }
+}

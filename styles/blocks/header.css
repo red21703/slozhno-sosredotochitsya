@@ -1,0 +1,128 @@
+.header {
+  display: grid;
+  gap: var(--gap);
+  min-block-size: 100vh;
+  grid-template-rows: 1fr max-content 1fr;
+  justify-items: end;
+  align-items: center;
+  padding: 10px;
+}
+
+.decorative-rec-icon {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 20px;
+  display: inline-flex;
+  font-family: inherit;
+font-size: inherit;
+font-weight: 400;
+line-height: 25px;
+color: var(--accent-color);
+letter-spacing: 0em;
+gap: 10px;
+align-items: center;
+visibility: var(--rec-decor-visibility);
+}
+
+.decorative-rec-icon::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-color);
+  background: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.header__theme-menu {
+
+ align-self: center;
+ justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+}
+.header__theme-menu-button {
+  border: none;
+  padding: 0 13px;
+  outline: 1px solid transparent;
+  color: var(--theme-menu-colors);
+  text-transform: lowercase;
+  background-color: transparent;
+  cursor: pointer;
+} 
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-frame);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  margin-block-end: -1px;
+  border-block-end: 1px solid var(--theme-menu-colors);
+
+}
+
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--theme-menu-colors);
+}
+
+
+.header__main-title {
+  justify-self: self-start;
+  color: var(--main-title-color);
+
+font-size: var(--accent-heading-fs-mobile);
+font-weight: 700;
+line-height: 96px;
+letter-spacing: 0em;
+text-align: left;
+text-shadow: 4px 4px 0 var(--shaddow-main-title-color);
+
+}
+
+.header__title {
+ max-inline-size: 364px;
+}
+
+@media (width >= 768px) {
+
+  .header {
+    padding: 20px 20px 20px 0;
+  }
+
+  .header__main-title {
+    line-height: 99px;
+    font-size: var(--accent-heading-fs-desktop);
+  }
+  .decorative-rec-icon {
+    inset-block-start: 20px;
+    inset-inline-end: 30px;
+  }
+}
+
+
+@media (width >= 1024px) {
+
+  .header__theme-menu {
+    align-self: flex-start;
+    justify-self: center;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__main-title {
+    line-height: 129.53px;
+  }
+
+  .header__title {
+    max-inline-size: 491px;
+   }
+}

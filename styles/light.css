@@ -4,9 +4,54 @@
   переключая тему
 */
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root .theme_light {
+  --page-background-image: url("../images/cover-image-light.png");
+  --accent-color: #FFC2E6;;
+  --lines-decorations: #353430;
+  --theme-menu-colors: #353430;
+  --text-color: #F1B2CE;
+  --hover-frame: rgba(50, 49, 45, 0.4);
+  --main-title-color: #FFC2E6;
+  --shaddow-main-title-color: #FF8DCB;
+  --text-color-alt: #353430;
+  --bg-color: #fff;
+  --header-logo-text-color: #DB00FF;
+  --title-bg-color: #FF8DCB;
+  --rec-decor-visibility: hidden;
+
+  --h2-color: #353430;
+  --paragraph-color: #353430;
+  --link-color: #FF8DCB;
+}
+@media (width >= 1024px) {
+  :root .theme_light {
+    --shaddow-main-title-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-background-image: url("../images/cover-image-light.png");
+    --accent-color: #FFC2E6;;
+    --lines-decorations: #353430;
+    --theme-menu-colors: #353430;
+    --text-color: #F1B2CE;
+    --hover-frame: rgba(50, 49, 45, 0.4);
+    --main-title-color: #FFC2E6;
+    --shaddow-main-title-color: #FF8DCB;
+    --text-color-alt: #353430;
+    --bg-color: #fff;
+    --header-logo-text-color: #DB00FF;
+    --title-bg-color: #FF8DCB;
+    --rec-decor-visibility: hidden;
+
+    --h2-color: #353430;
+    --paragraph-color: #353430;
+    --link-color: #FF8DCB;
+  }
+  @media (width >= 1024px) {
+    :root {
+      --shaddow-main-title-color: #FF0070;
+    }
+  }
 }

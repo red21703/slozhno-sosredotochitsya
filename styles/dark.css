@@ -4,9 +4,23 @@
   переключая тему
 */
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root .theme_dark {
+  --page-background-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --lines-decorations: #ff0070;
+  --theme-menu-colors: #ff0070;
+  --text-color: #F1B2CE;
+  --hover-frame: rgba(255, 0, 112, 0.4);
+  --main-title-color: #DB00FF;
+  --shaddow-main-title-color: #ff0070;
+  --text-color-alt: #000028;
+  --bg-color: #000028;
+  --header-logo-text-color: #DB00FF;
+  --title-bg-color: #ff0070;
+  --rec-decor-visibility: visible;
+
+  --h2-color: #ff0070;
+  --paragraph-color: #F1B2CE;
+  --link-color: #ff0070;
+  
 }
