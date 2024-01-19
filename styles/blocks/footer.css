@@ -10,7 +10,7 @@
 .footer__main-title {
   color: var(--main-title-color);
   font-weight: 700;
-  font-size: var(--accent-heading-fs-mobile);
+  font-size: var(--accent-heading-fs);
   line-height: 95.7px;
   letter-spacing: 0em;
   text-align: left;
@@ -23,7 +23,6 @@
   }
 
   .footer__main-title {
-    font-size: var(--accent-heading-fs-desktop);
     line-height: 99px;
   }
 }

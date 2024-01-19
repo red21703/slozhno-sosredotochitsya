@@ -75,7 +75,7 @@
   color: var(--main-title-color);
   font-weight: 700;
 
-  font-size: var(--accent-heading-fs-mobile);
+  font-size: var(--accent-heading-fs);
   line-height: 96px;
   letter-spacing: 0em;
   text-align: left;
@@ -92,7 +92,6 @@
   }
 
   .header__main-title {
-    font-size: var(--accent-heading-fs-desktop);
     line-height: 99px;
   }
   .decorative-rec-icon {
