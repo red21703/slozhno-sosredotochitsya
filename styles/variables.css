@@ -9,18 +9,18 @@
   --accent-color: #ff0070;
   --lines-decorations: #ff0070;
   --theme-menu-colors: #ff0070;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --hover-frame: rgba(255, 0, 112, 0.4);
-  --main-title-color: #DB00FF;
+  --main-title-color: #db00ff;
   --shaddow-main-title-color: #ff0070;
   --text-color-alt: #000028;
   --bg-color: #000028;
-  --header-logo-text-color: #DB00FF;
+  --header-logo-text-color: #db00ff;
   --title-bg-color: #ff0070;
   --rec-decor-visibility: visible;
 
   --h2-color: #ff0070;
-  --paragraph-color: #F1B2CE;
+  --paragraph-color: #f1b2ce;
   --link-color: #ff0070;
 
   --page-font-family: "IBM Plex mono", monospace;
@@ -28,4 +28,3 @@
   --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --gap: 10px;
 }
-
