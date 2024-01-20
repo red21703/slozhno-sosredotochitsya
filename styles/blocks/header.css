@@ -3,7 +3,6 @@
   grid-template-rows: 1fr max-content 1fr;
   justify-items: end;
   align-items: center;
-  gap: var(--gap);
   padding: 10px;
   min-block-size: 668px;
   block-size: 100vh;
@@ -43,13 +42,16 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
+  gap: 12px;
 }
 .header__theme-menu-button {
-  border: none;
-  padding: 0 13px;
+  border: 1px solid transparent;
+  padding: 2px 13px;
   outline: 1px solid transparent;
   color: var(--theme-menu-colors);
+  font-family: var(--page-font-family);
+  line-height: 18px;
+  text-align: center;
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
@@ -104,9 +106,11 @@
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
+    padding-inline-start: 20px;
   }
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 9px;
   }
 
   .header__main-title {

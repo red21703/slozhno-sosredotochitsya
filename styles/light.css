@@ -30,11 +30,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-  @media (width >= 1024px) {
-    :root {
-      --shaddow-main-title-color: #ff0070;
-    }
-  }
   :root {
     --page-background-image: url("../images/cover-image-light.png");
     --accent-color: #ffc2e6;
@@ -53,5 +48,11 @@
     --subtitle-color: #353430;
     --paragraph-color: #353430;
     --link-color: #ff8dcb;
+  }
+
+  @media (width >= 1024px) {
+    :root {
+      --shaddow-main-title-color: #ff0070;
+    }
   }
 }
